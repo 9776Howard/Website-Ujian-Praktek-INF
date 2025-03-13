@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KopiHowi</title>
+    <link rel="icon" href="Icon Kopi Howie.png" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .contact-box {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            background-color: #2f5d44;
+            color: white;
+            padding: 30px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-info h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        .contact-info p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .contact-info .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            padding: 30px;
+            width: 60%;
+            background-color: #ffffff;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2f5d44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #264a38;
+        }
+        .recaptcha {
+            margin: 15px 0;
+        }
+        @media (max-width: 768px) {
+            .contact-box {
+                flex-direction: column;
+            }
+            .contact-info {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+            .contact-form {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<nav>
+    <div>
+        <a href="1.html">
+            <img src="Logo Kopi Howie.png" alt="logo" href="1.html">
+        </a>
+    </div>
+    <ul>
+        <li>
+            <a href="2.html">About Us</a>
+        </li>
+
+        <li>
+            <a href="3.html">Menu</a>
+
+        </li>
+
+        <li>
+            <a href="4.html">Location</a>
+
+        </li>
+
+        <li>
+            <a href="5.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+<article>
+    <div class="container">
+        <div class="contact-box">
+            <!-- Bagian Informasi Kontak -->
+            <div class="contact-info">
+                <h2>Informasi Kontak</h2>
+                <p>Jika Anda memiliki pertanyaan atau kekhawatiran, hubungi kami melalui:</p>
+                <div class="info-item">
+                    <i>📞</i> 0877-8579-8634
+                </div>
+                <div class="info-item">
+                    <i>📧</i> 9776howard@kanisius.sch.id
+                </div>
+                <div class="info-item">
+                    <i>📍</i> Jl. Sultan Iskandar Muda No.61, Jakarta Selatan
+                </div>
+                <div class="info-item">
+                    <i><i class="fa fa-instagram"></i></i> @ho.w.i.e
+                </div>
+            </div>
+    
+            <!-- Bagian Formulir Kontak -->
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    
+                    <!-- reCAPTCHA -->
+                    <div class="recaptcha">
+                        <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                    </div>
+    
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</article>
+<footer>
+    <p> &copy; 2025 - Made by Howard Leonhart Junaedi</p>
+    </footer>
+  </body>
+</html>
